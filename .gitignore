@@ -1,0 +1,15 @@
+/vendor/
+/composer.phar
+/composer.lock
+/.phpunit.cache/
+/tests/.env
+/temp/
+.env
+*.log
+.idea/
+.vscode/
+.lh/
+.history/
+.claude/
+/tests/.ubl-tr-xsd/
+/.public/

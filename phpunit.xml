@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         cacheDirectory=".phpunit.cache"
+         failOnWarning="true"
+         failOnRisky="true">
+    <testsuites>
+        <!-- Ağa çıkmaz; sahte taşıyıcı ve örnek XML yanıtlarla çalışır -->
+        <testsuite name="birim">
+            <directory>tests/Birim</directory>
+        </testsuite>
+        <!-- Türkbelge test ortamına bağlanır; TURKBELGE_TEST_KULLANICI ve TURKBELGE_TEST_SIFRE gerekir -->
+        <testsuite name="entegrasyon">
+            <directory>tests/Entegrasyon</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+    </source>
+</phpunit>
